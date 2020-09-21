@@ -8,4 +8,4 @@ const Root = () => {
  )
 }
  
-render(<Root/>, document.querySelector('#sas-document-viewer'));
+render(<Root/>, document.querySelector('#app-body'));
