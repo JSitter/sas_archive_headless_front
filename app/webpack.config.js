@@ -24,11 +24,12 @@ const config = {
        }
      },
     {
-      test: /\.(svg|png|jpg\gif)$/,
+      test: /\.(svg|png|jpg|gif)$/,
       use: {
         loader: "file-loader",
         options: {
-          name: "[name].[ext]"
+          name: "[name].[ext]",
+          outputPath: "assets",
         },
       },
     }
