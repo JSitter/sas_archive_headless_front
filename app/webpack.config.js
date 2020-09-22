@@ -9,7 +9,11 @@ const config = {
    path: path.resolve(__dirname, '../dist'),
    filename: 'app.bundle.js'
  },
- plugins: [new HtmlWebpackPlugin({template:'./index.html'})],
+ plugins: [new HtmlWebpackPlugin({
+   template:'./index.html', 
+   filename: 'index.php',
+   publicPath: 'http://localhost:8084/',
+  })],
  module: {
    rules: [
      {
@@ -17,7 +21,7 @@ const config = {
        use: ['style-loader', 'css-loader'],
      },
      {
-       test: /\.js$/,
+       test: /\.(js|jsx)$/,
        exclude: /(node_modules)/,
        use: {
          loader: 'babel-loader'
