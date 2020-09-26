@@ -44,8 +44,8 @@ function getMenuItems(items) {
 export default function MainMenu(props) {
 
     return (
-        <section className="main-menu">
+        <nav className="main-menu">
             {loginMenu()}
-        </section>
+        </nav>
     );
 }
