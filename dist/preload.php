@@ -1,8 +1,15 @@
-<div id="app-body">
-<header style="width:100%;height:350px;background-color:rgb(43, 41, 22);">
-    
+<?php
+    $preloadHeaderColor = '#596478';
+    $headerSize = '450px';
+    $menuSize = "50px";
+    $menuColor = "#333";
+?>
+
+<div id="app-body" style="border:0px;margin:0px;padding:0px;">
+<header style="width:100%;height:<?php print($headerSize) ?>;background-color:<?php print($preloadHeaderColor) ?>;overflow:hidden;">
+    <img src="./assets/seminarycovertiny.jpg" style="width:100%;height:auto;filter:blur(2px);margin-top:-150px;"/>
 </header>
-<nav style="background-color: #333;width:100%;height:50px;display:flex;flex-direction:row;box-shadow:0px 3px 5px rgba(30, 30, 30, .6);">
+<nav style="background-color:<?php print($menuColor) ?>;width:100%;height:<?php print($menuSize) ?>;display:flex;flex-direction:row;box-shadow:0px 3px 5px rgba(30, 30, 30, .6);">
     <?php print(str_repeat('<div style="background-color:#555;height:100%;width: 75px;margin: 0px 10px;"></div>', 3)) ?>
 </nav>
 <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;margin:50px;">
