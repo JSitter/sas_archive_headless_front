@@ -22,17 +22,27 @@ html, body {
     top: 0px;
 }
 
-#app-body {
-    padding: 0px;
-    margin: 0px;
-}
-
 section.main-header {
     background-color: $headerPreloadColor;
     background-image: url('../assets/seminarycover50.jpg');
     background-position-x: center;
     background-size: cover;
-    min-height: $largeHeaderSize;
+    background-position-y: $header-background-position;
+    background-repeat: no-repeat;
+    min-height: $large-header-size;
     padding: 50px;
     color: $offWhite;
+}
+
+nav.main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 30px;
+    height: $menu-size;
+    background-color: $midBrown;
+
+    li {
+        list-style: none;
+    }
 }
