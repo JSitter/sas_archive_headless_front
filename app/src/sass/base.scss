@@ -28,11 +28,11 @@ html, body {
 }
 
 section.main-header {
-    background-color: $midBrown;
+    background-color: $headerPreloadColor;
     background-image: url('../assets/seminarycover50.jpg');
     background-position-x: center;
     background-size: cover;
-    min-height: 450px;
+    min-height: $largeHeaderSize;
     padding: 50px;
     color: $offWhite;
 }
