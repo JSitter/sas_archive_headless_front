@@ -3,7 +3,7 @@
     $headerSize = '450px';
     $menuSize = "50px";
     $menuColor = "#333";
-    $headerBackgroundPosition = " calc(100vw / -10)";
+    $headerBackgroundPosition = "calc(100vw / -10)";
     $backgroundBlur = "10px";
     $menuBoxShadow = "2px 5px 5px rgba(30, 30, 30, .3)";
 ?>
