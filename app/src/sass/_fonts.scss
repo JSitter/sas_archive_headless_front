@@ -1,0 +1,91 @@
+@import 'site-variables';
+
+@font-face {
+    font-family: SiteHeading;
+    src: url('#{$custom-font-path}/Alice-Regular.ttf');
+}
+
+@font-face {
+    font-family: SiteSerif;
+    src: url('#{$custom-font-path}/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: SiteSansSerif;
+    src: url('#{$custom-font-path}/Nunito-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: SiteHeading;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+html {
+    font-family: SiteSerif;
+    font-size: 18pt;
+    color: $darkGrey;
+}
+
+p {
+    max-width: 600px;
+}
+
+.node-title {
+    margin: 20px;
+}
+
+div#block-seminarian-branding > a {
+    color: $offWhite;
+    padding: 0px 3px;
+    text-decoration: none; 
+ }
+
+ 
+.white-links a:visited {
+    color: $midGrey;
+}
+
+.white-links a:hover {
+    color: $white;
+    text-decoration: underline;
+
+}
+
+.white-links a:active {
+    color: $white;
+    text-decoration: underline;
+
+}
+
+.white-links a:focus {
+    color: $white;
+    text-decoration: underline;
+}
+
+a {
+   color: $teal;
+   padding: 0px 3px;
+   text-decoration: none; 
+}
+
+a:visited {
+    color: $midBrown;
+}
+
+a:hover {
+    color: $lightTeal;
+    text-decoration: underline;
+}
+
+a:active {
+    color: $purple;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: $lightTeal;
+    text-decoration: underline;
+}
