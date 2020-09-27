@@ -1,5 +1,6 @@
 <?php
 $slug = $_SERVER['REQUEST_URI'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +13,9 @@ $slug = $_SERVER['REQUEST_URI'];
   <!-- Compiled and minified JavaScript for Materialize -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
-  <title>Simple React App - <?php print($slug) ?></title>
+  <title>Saint Anthony's Seminary Archive</title>
 </head>
-<body style="background-color:#dddddd;">
+<body style="background-color:#dddddd;padding:0px;margin:0px;">
   <?php
     require_once('preload.php');
   ?>
