@@ -1,6 +1,6 @@
 <?php
     $preloadHeaderColor = '#596478';
-    $headerSize = '550px';
+    $headerSize = '450px';
     $menuSize = "80px";
     $menuColor = "#333";
     $headerBackgroundPosition = "calc(100vw / -10)";
