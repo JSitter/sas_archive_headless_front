@@ -1,4 +1,5 @@
 import React from 'react';
+import Spinner from './Spinner.jsx';
 
 function menuItem(name, link) {
     return (
@@ -36,9 +37,18 @@ function userLinks(userName) {
 
 function getMenuItems(items) {
     let menuItems = [];
-    itemsforEach(element => {
-        menuItems.push(menuItem("name", "link"));
-    });
+    if( items ) {
+        itemsforEach(element => {
+            menuItems.push(menuItem("name", "link"));
+        });
+    }else {
+        return (
+            <div className="menu-item menu-loading-spinner">
+                <Spinner />
+            </div>
+        )
+    }
+
 }
 
 export default function MainMenu(props) {
@@ -46,6 +56,26 @@ export default function MainMenu(props) {
     return (
         <nav className="main-menu">
             {loginMenu()}
+
+            <div className="dropdown-menu">
+                <div className=".dropdown-title">
+                    <i className="fas fa-bars"></i>
+                </div>
+                <div className="dropdown-content">
+                    {getMenuItems(props.menuItems)}
+                </div>
+                
+            </div>
+
+            <div className="dropdown">
+            <button className="dropbtn">Dropdown</button>
+            <div className="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            </div> 
+            
         </nav>
     );
 }
