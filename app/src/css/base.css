@@ -6259,6 +6259,9 @@ nav.main-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0px 30px;
   height: 80px;
   background-color: #52361C;
@@ -6270,26 +6273,30 @@ nav.main-menu li {
 
 /* Nav dropdown css */
 /* Dropdown Button */
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
+.dropdown-title {
+  background-color: #188F9A;
   color: white;
-  padding: 16px;
+  padding: 0px 26px;
   font-size: 16px;
   border: none;
+  height: 80px;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown-menu {
   position: relative;
   display: inline-block;
 }
 
+.right-menu {
+  right: 0;
+}
+
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-links {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #333;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -6297,26 +6304,31 @@ nav.main-menu li {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
+.dropdown-links a {
+  color: #FCFCFC;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-links a:hover {
   background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-menu:hover .dropdown-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown-menu:hover .dropdown-title {
+  background-color: #105d64;
 }
 
 /* Loading Teaser Content */
@@ -6347,5 +6359,34 @@ nav.main-menu li {
 .content-wrapper {
   width: calc(80% - $site-padding *2);
   margin: 30px auto;
+}
+
+/* Spinner Styles */
+.loading-spinner {
+  -webkit-animation: rotation 1.5s infinite linear;
+          animation: rotation 1.5s infinite linear;
+  margin: 40px auto;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 /*# sourceMappingURL=base.css.map */
