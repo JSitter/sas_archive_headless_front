@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Spinner() {
     return (
-        <i className="fas fa-spinner spin"></i>
+        <i className="fas fa-spinner loading-spinner"></i>
     )
 }
