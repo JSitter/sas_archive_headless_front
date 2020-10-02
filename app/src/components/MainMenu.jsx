@@ -29,16 +29,6 @@ function loginMenu() {
     );
 }
 
-function userLinks(userName) {
-    return (
-        <ul>
-            <li><a href="#">User Icon</a>{userName}</li>
-            <li><a href="#">Favorites</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    );
-}
-
 function getMenuItems(items) {
     let menuItems = [];
     if( items ) {
@@ -59,7 +49,7 @@ export default function MainMenu(props) {
 
     return (
         <nav className="main-menu">
-            {loginMenu()}
+            <LoginMenu />
 
             <div className="dropdown-menu">
                 <button className="dropdown-title">Menu <i className="fas fa-bars"></i></button>
