@@ -6,6 +6,7 @@
 @import './font-awesome/brands';
 @import './font-awesome/solid';
 @import 'fonts';
+@import 'forms';
 @import 'Header';
 
 * {
@@ -137,3 +138,9 @@ nav.main-menu {
       transform: rotate(359deg);
     }
   }
+
+/* LoginMenu.jsx Styles */
+.login-menu-form {
+    margin: 30px;
+
+}
