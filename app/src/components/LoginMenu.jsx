@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 function anonymousTitle() {
     return (
         <button className="dropdown-title">
-            Login <i className="fas fa-user-circle"></i>
+            <span className="menu-title-text">Login</span> <i className="fas fa-user-circle"></i>
         </button>
     );
 }
@@ -11,7 +11,7 @@ function anonymousTitle() {
 function loggedInTitle(userName, userProfileImage) {
     return (
         <button className="dropdown-title">
-            {userName} {userProfileImage ? 
+            <span className="menu-title-text">{userName}</span>{userProfileImage ? 
                 <img className="login-menu-user-image" href="" /> : 
                 <i className="fas fa-user-circle"></i> }
         </button>

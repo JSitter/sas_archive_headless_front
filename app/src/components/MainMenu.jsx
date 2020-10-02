@@ -52,7 +52,7 @@ export default function MainMenu(props) {
             <LoginMenu />
 
             <div className="dropdown-menu">
-                <button className="dropdown-title">Menu <i className="fas fa-bars"></i></button>
+                <button className="dropdown-title"><span className="menu-title-text">Archived Materials</span><i className="fas fa-bars"></i></button>
                 <div className="dropdown-links right-menu">
                     {getMenuItems(props.menuItems)}
                 </div>
