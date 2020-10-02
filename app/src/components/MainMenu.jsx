@@ -1,5 +1,6 @@
 import React from 'react';
 import Spinner from './Spinner.jsx';
+import LoginMenu from './LoginMenu.jsx';
 
 function menuItem(name, link) {
     return (
@@ -19,9 +20,12 @@ function userMenu(loggedIn = False)  {
 
 function loginMenu() {
     return (
-        <ul>
-            <li><a href="#">Login</a></li>
-        </ul>
+        <div className="dropdown-menu">
+            <button className="dropdown-title">Login <i className="fas fa-user-circle"></i></button>
+            <div className="dropdown-links">
+                <LoginMenu />
+            </div>
+        </div> 
     );
 }
 
