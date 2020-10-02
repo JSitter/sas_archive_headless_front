@@ -1,0 +1,50 @@
+@import 'site-variables';
+@import 'colors';
+
+form {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: SiteSansSerif;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    font-family: SiteSansSerif;
+    font-weight: 500;
+    background-color: $lightGrey;
+    padding: 10px 20px;
+    border: 1px $teal solid;
+}
+
+input[type=button] {
+    font-family: SiteSansSerif;
+    font-weight: 500;
+    background-color: $teal;
+    padding: 10px 20px;
+    border: 1px $darkTeal solid;
+    color: $offWhite;
+}
+
+.form-item {
+    margin: 30px 5px;
+}
+
+.form-required::after {
+    content: "*";
+    color: $red;
+    margin: 0px 5px;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.description {
+    color: $midGrey;
+}
