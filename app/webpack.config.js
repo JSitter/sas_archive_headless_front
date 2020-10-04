@@ -12,7 +12,7 @@ const config = {
  plugins: [new HtmlWebpackPlugin({
    template:'./index.html', 
    filename: 'index.php',
-   publicPath: 'http://localhost:8084/',
+   publicPath: './',
   })],
  module: {
    rules: [
