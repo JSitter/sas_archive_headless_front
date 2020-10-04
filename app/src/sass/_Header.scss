@@ -5,13 +5,13 @@ img.header-hero {
     position: absolute;
     width: 100%;
     height: auto;
-    overflow: hidden;
     z-index: 1;
     top:0px;
     left: 0px;
 }
 
 section.main-header {
+    position: relative;
     background-image: url('../assets/seminarycoververysmall.jpg');
     background-position-x: center;
     background-size: cover;
