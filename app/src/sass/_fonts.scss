@@ -3,16 +3,19 @@
 @font-face {
     font-family: SiteHeading;
     src: url('#{$custom-font-path}/Alice-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: SiteSerif;
     src: url('#{$custom-font-path}/RobotoSlab-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: SiteSansSerif;
     src: url('#{$custom-font-path}/Nunito-Regular.ttf');
+    font-display: swap;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -6208,6 +6208,54 @@ a:focus {
   text-decoration: underline;
 }
 
+form {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2em;
+  font-family: SiteSansSerif;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  font-family: SiteSansSerif;
+  font-weight: 500;
+  background-color: #E5E5E5;
+  padding: 10px 20px;
+  border: 1px #188F9A solid;
+}
+
+input[type=button] {
+  font-family: SiteSansSerif;
+  font-weight: 500;
+  background-color: #188F9A;
+  padding: 10px 20px;
+  border: 1px #105d64 solid;
+  color: #FCFCFC;
+}
+
+.form-item {
+  margin: 30px 5px;
+}
+
+.form-required::after {
+  content: "*";
+  color: #E71205;
+  margin: 0px 5px;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.description {
+  color: #A4A4A4;
+}
+
 img.header-hero {
   position: absolute;
   width: 100%;
@@ -6272,6 +6320,11 @@ nav.main-menu li {
 }
 
 /* Nav dropdown css */
+.menu-title-text {
+  margin: 0px 15px 0px 0px;
+  font-size: 1.4em;
+}
+
 /* Dropdown Button */
 .dropdown-title {
   background-color: #188F9A;
@@ -6297,10 +6350,12 @@ nav.main-menu li {
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 160px;
+  min-width: 300px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 /* Links inside the dropdown */
@@ -6388,5 +6443,18 @@ nav.main-menu li {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
   }
+}
+
+/* LoginMenu.jsx Styles */
+.login-menu-form {
+  margin: 30px;
+}
+
+.login-menu-form label {
+  color: #FCFCFC;
+}
+
+.login-menu-form input {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=base.css.map */
